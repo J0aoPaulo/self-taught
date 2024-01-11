@@ -1,0 +1,12 @@
+--- Hermeson Bastos --- 
+* Conexão com o atlas
+* Correção de erros
+* refatoração de Conta e DescontoRecorrente
+* Mudar forma de inserção das entidades
+
+--- João Paulo Almeida ----
+* Criação dos MongoDao
+* refatoração do codigo 
+* Correção de erros
+* Mudar forma de inserção das entidades
+* Refatoração de Usuario e Transação
