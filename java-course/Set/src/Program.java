@@ -1,5 +1,3 @@
-import entities.Instructor;
-
 import java.util.*;
 
 public class Program {
@@ -7,8 +5,6 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
         Set<Number> course = new HashSet<>();
-        Set<Number> courseTree = new TreeSet<>();
-        Set<Number> courseLinked = new LinkedHashSet<>();
 
         System.out.print("How many students for course A? ");
         int optionA = sc.nextInt();
