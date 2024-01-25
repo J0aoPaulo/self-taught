@@ -5,7 +5,6 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
         Set<Number> course = new HashSet<>();
-
         System.out.print("How many students for course A? ");
         int optionA = sc.nextInt();
         inputCourse(sc, optionA, course);
@@ -16,8 +15,7 @@ public class Program {
         int optionC = sc.nextInt();
         inputCourse(sc, optionC, course);
 
-        System.out.print("Digite o elemento que irá para o final do set: ");
-        int last = sc.nextInt();
+        
 
     }
 
@@ -26,4 +24,7 @@ public class Program {
             set.add(sc.nextInt());
         }
     }
+
+
+
 }
