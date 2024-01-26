@@ -26,7 +26,7 @@ public class Main {
         int portionValue = sc.nextInt();
 
         Contract contract = new Contract(number, date, contractValue);
-        
+
         ContractService contractService = new ContractService(new TaxaPaypal());
         contractService.processContract(contract, portionValue);
 
