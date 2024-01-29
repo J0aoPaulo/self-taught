@@ -1,7 +1,7 @@
 package maximumWealth;
 
 class maximumWealth {
-    public int maximumWealth(int[][] accounts) {
+    public int MaximumWealth(int[][] accounts) {
         int richest = 0, customer = 0;
 
         for (int i = 0; i < accounts.length; i++) {
