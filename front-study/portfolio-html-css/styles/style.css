@@ -3,7 +3,8 @@
 :root {
     --first-color: #000000;
     --second-color: #F6F6F6;
-    --third-color: rgb(128,0,128);
+    --third-color:  #922192;
+    --fourth-color: #af0daf;
 
     --first-font: 'Krona One', sans-serif;
     --second-font: 'Montserrat', sans-serif; 
@@ -30,15 +31,15 @@ body{
 }
 
 .header__menu__link{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--second-font);
     font-weight: 600;
-    color: rgb(175, 13, 175);
+    color: var(--fourth-color);
     text-decoration: none;  
 }
 
 .titulo-destaque{
-    color: rgb(175, 13, 175);
+    color: var(--fourth-color);
 }
 
 .apresentacao{
@@ -46,21 +47,22 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 .apresentacao__conteudo{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .apresentacao__conteudo__titulo{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--first-font);
 }
 
 .apresentacao__conteudo__texto{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--second-font);
 }
 
@@ -76,26 +78,30 @@ body{
     display: flex;
     justify-content: center;
     gap: 16px;
-    border: 4px inset var(--third--color);
-    width: 378px;
+    border: 4px inset var(--third-color);
+    width: 50%;
     text-align: center;
     border-radius: 16px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
-    color: #F6F6F6;
+    color: var(--second-color);
     font-family: var(--second-font);
 }
 
 .apresentacao__links__subtitulo{
     font-family: var(--first-font);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .apresentacao__links__link:hover{
     background-color: #272727;
+}
+
+.apresentacao__imagem {
+    width: 50%;
 }
 
 .footer{
@@ -103,8 +109,26 @@ body{
     padding: 24px;
     font-size: 30px;
     color: #000000;
-    background-color: rgb(194, 50, 194);
+    background-color: #c232c2;
     font-family: var(--second-font);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+    }
 }
