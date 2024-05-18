@@ -42,7 +42,9 @@ public class Main {
                 HttpResponse<String> response = client
                         .send(request, HttpResponse.BodyHandlers.ofString());
 
-                cepsJson.add(response.body());
+                String json = response.body();
+
+
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
